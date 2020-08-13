@@ -1,0 +1,19 @@
+
+<div class="container text-center mt-4">
+  <h1> <%= @cocktail.name %> </h1>
+</div>
+
+<div class="container">
+  <% @cocktail.doses.each do |dose| %>
+    <div class="card-product w-50 mx-auto bg-success">
+      <div class="card-product-infos p-3 mb-2 text-white">
+        <h2><%= dose.ingredient.name %></h2>
+        <p><%= dose.description %></p>
+        <%= link_to "Delete dose", dose_path(dose), method: :delete, class: "badge badge-danger" %>
+      </div>
+    </div>
+  <% end %>
+  <div class="w-50 mx-auto text-center"><%= link_to 'Add a dose', new_cocktail_dose_path(@cocktail), class:"btn btn-primary" %></div>
+  <div class="w-50 mx-auto text-center mt-2"><%= link_to 'Back to cocktails', cocktails_path, class:"btn btn-primary" %></div>
+  
+</div>

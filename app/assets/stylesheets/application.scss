@@ -11,3 +11,7 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.body-background {
+  background-color: red($color: #d1b1ca);
+}
