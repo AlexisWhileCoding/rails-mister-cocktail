@@ -10,8 +10,22 @@
 
 // Your CSS partials
 @import "components/index";
+@import "components/navbar";
 @import "pages/index";
 
 .body-background {
-  background-color: red($color: #d1b1ca);
+  background-size: cover;
 }
+
+.card-background {
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+}
+
+label {
+  color:white;
+}
+

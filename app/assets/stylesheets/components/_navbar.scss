@@ -1,3 +1,18 @@
+.navbar {
+  justify-content: space-between;
+  background-color: rgba($color: #bd9090, $alpha: 0.5);
+  padding: 25px;
+  margin-bottom: 8px;
+  border-bottom: red;
+  
+  h3 {
+    color: white;
+    &:hover {
+      color: red;
+    }
+  }
+}
+
 .navbar-lewagon {
   justify-content: space-between;
   background: white;

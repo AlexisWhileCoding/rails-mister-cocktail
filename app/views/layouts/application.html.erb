@@ -10,7 +10,8 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="body-background">
+  <nav class='navbar'><%= link_to 'Home', cocktails_path, class: 'btn btn-primary'%></nav>
+  <body class='body-background' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'cocktailbar.jpg'%>)"> >
     <%= yield %>
   </body>
 </html>
